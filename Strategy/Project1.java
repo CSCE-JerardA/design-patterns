@@ -1,4 +1,4 @@
-package Softproject1;
+package Strategy;
 
 /*
  * Writing by Jerard (JC) Austin
