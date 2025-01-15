@@ -1,11 +1,10 @@
 package Strategy;
 
-import java.util.ArrayList;
-
 /*
  * Written by Jerard Austin
  */
 
+ import java.util.ArrayList;
 
 public class ApartmentList {
     private ArrayList<Apartment> apartments;
@@ -16,13 +15,14 @@ public class ApartmentList {
     }
 
     public void add(String address, int numBathrooms, int numBedrooms, double price){
-
+        apartments.add(new Apartment(address, numBathrooms, numBedrooms, price));
     }
 
     public void setSortBehavior(){
 
+        return sortBehavior.sort(new ArrayList<>());
     }
 
-    public 
+    
 
 }
