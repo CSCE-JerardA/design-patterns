@@ -15,8 +15,19 @@ public class Apartment {
 
 
     public Apartment(String address, int numBathrooms, int numBedrooms, double price){
+        
+        this.address = address;
+        this.numBathrooms = 0;
+        this.numBedrooms = 0;
+        this.price = 0.0;
 
+        
+        
     }
 
+    
+
+
 }
+
 
