@@ -1,3 +1,4 @@
+package Strategy;
 /*
  * Written by Jerard Austin
  */
