@@ -19,7 +19,7 @@ public class ApartmentList {
     }
 
 
-       
+       //Wsg
 
        
 
@@ -29,9 +29,16 @@ public class ApartmentList {
 
     public void setSortBehavior(){
 
-        return sortBehavior.sort(new ArrayList<>());
+        return SortBehavior.sort(new ArrayList<>());
     }
 
     
+
+
+    public 
+
+
+
+
 
 }
