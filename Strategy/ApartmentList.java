@@ -18,6 +18,15 @@ public class ApartmentList {
         apartments.add(new Apartment(address, numBathrooms, numBedrooms, price));
     }
 
+
+       
+
+       
+
+    
+
+
+
     public void setSortBehavior(){
 
         return sortBehavior.sort(new ArrayList<>());
