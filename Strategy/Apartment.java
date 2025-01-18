@@ -6,6 +6,7 @@ package Strategy;
 
 import javax.swing.JOptionPane;
 import java.util.Scanner; 
+import java.util.ArrayList;
 
 public class Apartment implements Comparable<Apartment> {
     String address;
@@ -17,9 +18,9 @@ public class Apartment implements Comparable<Apartment> {
     public Apartment(String address, int numBathrooms, int numBedrooms, double price){
         
         this.address = address;
-        this.numBathrooms = 0;
-        this.numBedrooms = 0;
-        this.price = 0.0;
+        this.numBathrooms = numBathrooms;
+        this.numBedrooms = numBedrooms;
+        this.price = price;
     }
 
     
@@ -40,7 +41,7 @@ public class Apartment implements Comparable<Apartment> {
         numBathrooms + " bathroom" + getMultiple(numBathrooms) + " \n";
     }
 
-    public String getMultiple(int number){
+    private String getMultiple(int number){
         if(number <= 1){
             return "";
         }
