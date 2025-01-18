@@ -21,26 +21,17 @@ public class ApartmentList {
     }
 
 
-    
-
-       
-
-    
-
-
-
-    public void setSortBehavior(){
-
-        return SortBehavior.sort(new ArrayList<>());
+    public void setSortBehavior(SortBehavior sortBehavior) {
+        this.sortBehavior = sortBehavior;
     }
 
-    
+    public ArrayList<Apartment> getSortedList() {
+        return sortBehavior.sort(apartments);
+    }
 
-
-    public 
-
-
-
+    public ArrayList<Apartment> getUnSortedList() {
+        return apartments;
+    }
 
 
 }

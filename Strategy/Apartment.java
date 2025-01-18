@@ -51,19 +51,19 @@ public class Apartment implements Comparable<Apartment> {
     }
   
 
-    public String getAddress(){
+    private String getAddress(){
         return address;
     }
 
-    public int getNumBedrooms(){
+    private int getNumBedrooms(){
         return numBedrooms;
     }
 
-    public int getNumBathrooms(){
+    private int getNumBathrooms(){
         return numBathrooms;
     }
 
-    public double getPrice(){
+    private double getPrice(){
         return price;
     }
 
