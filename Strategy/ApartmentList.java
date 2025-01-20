@@ -7,17 +7,17 @@ package Strategy;
  import java.util.ArrayList;
 
 public class ApartmentList {
-    private ArrayList<Apartment> apartments;
+    private ArrayList<Apartment> apartment;
     private SortBehavior sortBehavior;
 
     //Creates a new array
     public ApartmentList(){
-        this.apartments = new ArrayList<>();
+        this.apartment = new ArrayList<>();
     }
 
     //Method that allows you to add an address, number of bathrooms, number of bedrooms, and the price
     public void add(String address, int numBathrooms, int numBedrooms, double price){
-        apartments.add(new Apartment(address, numBathrooms, numBedrooms, price));
+        apartment.add(new Apartment(address, numBathrooms, numBedrooms, price));
     }
 
 
@@ -26,11 +26,11 @@ public class ApartmentList {
     }
 
     public ArrayList<Apartment> getSortedList() {
-        return sortBehavior.sort(apartments);
+        return sortBehavior.sort(apartment);
     }
 
     public ArrayList<Apartment> getUnSortedList() {
-        return apartments;
+        return apartment;
     }
 
 

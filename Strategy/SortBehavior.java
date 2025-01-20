@@ -4,10 +4,11 @@ package Strategy;
  * Written by Jerard Austin
  */
 
- import java.util.ArrayList;
+import java.util.ArrayList;
 
+//The interface to connect to 
 public interface SortBehavior {
 
-  
-    ArrayList<Apartment> sort(ArrayList<Apartment> apartments);
-} 
+    public ArrayList<Apartment> sort(ArrayList<Apartment> apartment);
+
+}

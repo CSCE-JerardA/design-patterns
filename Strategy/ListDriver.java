@@ -18,6 +18,8 @@ public class ListDriver {
      */
     public void run() {
         ApartmentList apartmentList = new ApartmentList();
+        apartmentList.setSortBehavior(new BubbleSort());
+
         apartmentList.add("Saga", 1, 1, 1375);
         apartmentList.add("Saga", 2, 2, 799);
         apartmentList.add("Saga", 3, 3, 920);
