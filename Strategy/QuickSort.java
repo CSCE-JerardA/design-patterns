@@ -7,6 +7,7 @@ package Strategy;
 import java.util.ArrayList;;
 
 public class QuickSort implements SortBehavior {
+    @Override
     public ArrayList<Apartment> sort(ArrayList<Apartment> apartments){
         ArrayList<Apartment> sortedList = new ArrayList<>(apartments);
         quickSort(sortedList, 0, sortedList.size() - 1);

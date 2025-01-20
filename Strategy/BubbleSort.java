@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class BubbleSort implements SortBehavior{
     
+    @Override
     public ArrayList<Apartment> sort(ArrayList<Apartment> apartments){
         ArrayList<Apartment> sortedList = new ArrayList<>(apartments);
         int num = sortedList.size();
