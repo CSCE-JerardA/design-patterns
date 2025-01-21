@@ -1,10 +1,11 @@
-package Observer;
+package ObserverProj;
 
 /*
  *  @author Jerard Austin
  */
 
 import java.util.ArrayList;
+
 
 
 public class StudentGovtPoll{

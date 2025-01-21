@@ -1,4 +1,4 @@
-package Observer;
+package ObserverProj;
 
 /*
  * @author Jerard Austin
