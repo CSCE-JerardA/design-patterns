@@ -12,7 +12,9 @@ public class PercentageDisplay {
     private Subject poll;
 
     public PercentageDisplay(Subject poll){
-
+        this.poll = poll;
+        this.candidates = new ArrayList<>();
+        poll.registerObserver(this);
     }
 
     public void display(){

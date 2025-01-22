@@ -12,6 +12,7 @@ public class TallyDisplay implements Observer{
 
     public TallyDisplay(Subject poll){
         this.poll = poll;
+        this.candidates = new ArrayList<>();
         poll.registerObserver(this);
 
     }
