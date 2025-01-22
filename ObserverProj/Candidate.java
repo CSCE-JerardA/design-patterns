@@ -4,9 +4,6 @@ package ObserverProj;
  * @author Jerard Austin
  */
 
-import java.util.Scanner;
-import javax.swing.JOptionPane;
-
 
 public class Candidate {
 
@@ -28,34 +25,37 @@ public class Candidate {
     public boolean equals(String firstName, String lastName){
 
 
-        return;
+        return this.firstName.equalsIgnoreCase(firstName) && this.lastName.equalsIgnoreCase(lastName);
 
     }
 
 
     public void addVote(){
-
+        totalNumVotes++;
     }
 
     public void addFirstVote(){
-
-
+        numFirstPlaceVotes++;
+        addVote();
     }
 
     public void addSecondVote(){
-
+        numSecondPlaceVotes++;
+        addVote();
 
     }
 
 
     public void addThirdVote(){
-
+        numThirdPlaceVotes++;
+        addVote();
 
     }
 
 
     public double getWeightedVotes(){
-        return 
+
+        return (numFirstPlaceVotes * 3) + (numSecondPlaceVotes * 2) + numThirdPlaceVotes;
 
     }
 
