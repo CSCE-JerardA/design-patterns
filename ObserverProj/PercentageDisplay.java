@@ -19,6 +19,9 @@ public class PercentageDisplay {
 
     }
 
-    
+    public void update(ArrayList<Candidate> candidates) {
+        this.candidates = candidates;
+        display();
+
     
 }

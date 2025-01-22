@@ -8,7 +8,6 @@ import java.util.ArrayList;
 
 public interface Observer {
     
-    public ArrayList<Candidate> candidates;
-
+  private ArrayList<Candidate> candidates;
 
 }

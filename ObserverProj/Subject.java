@@ -10,18 +10,18 @@ public interface Subject{
     /**
      * @param observer
      */
-    public void registerObserver(Observer observer){
+    private void registerObserver(Observer observer){
 
     }
 
     /**
      * @param observer
      */
-    public void removeObserver(Observer observer){
+    private void removeObserver(Observer observer){
 
     }
 
-    public void notifyObservers(){
+    private void notifyObservers(){
 
     }
 
