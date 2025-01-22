@@ -7,23 +7,12 @@ package ObserverProj;
 
 public interface Subject{
     
-    /**
-     * @param observer
-     */
-    private void registerObserver(Observer observer){
+    void registerObserver(Observer observer);
 
-    }
+   
+    void removeObserver(Observer observer);
 
-    /**
-     * @param observer
-     */
-    private void removeObserver(Observer observer){
-
-    }
-
-    private void notifyObservers(){
-
-    }
+    void notifyObservers();
 
 
 
