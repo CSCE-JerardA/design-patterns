@@ -17,12 +17,19 @@ public class TallyDisplay implements Observer{
 
     }
 
-    public void display(){
-         System.out.println("Results:");
-        for (Candidate candidate : candidates) {
-            System.out.println(candidate.getFullname() + " : " + candidate.getNumFirstPlaceVotes() + " 1st-place votes, " + 
-                candidate.getNumSecondPlaceVotes() + " 2nd-place votes, " + candidate.getNumThirdPlaceVotes() + " 3rd-place votes.");
+     public void update(ArrayList<Candidate> candidates) {
+        this.candidates = candidates;
+        display();
     }
+
+
+    public void display() {
+        System.out.println("Tally Display:");
+        for (Candidate candidate : candidates) {
+            System.out.println(candidate.getFullname() + " - Weighted Votes: " + candidate.getWeightedVotes());
+        }
+    }
+
 
 }
 
