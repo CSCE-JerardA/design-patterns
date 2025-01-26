@@ -36,4 +36,4 @@ public class TallyDisplay implements Observer{
     
 
 
-}
+

@@ -1,3 +1,5 @@
+package ObserverProj;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
@@ -16,11 +18,11 @@ public class SchoolDriver {
      */
     public void run() {
         Random rand = new Random();
-        StudentGovPoll schoolPolls = new StudentGovPoll("Fun Collegiate");
+        StudentGovtPoll schoolPolls = new StudentGovtPoll("Fun Collegiate");
         new TallyDisplay(schoolPolls);
         new PercentageDisplay(schoolPolls);
 
-        System.out.println("Welcome to " + schoolPolls.getSchool() + "'s Student Gov Poll");
+        System.out.println("Welcome to " + schoolPolls.getSchool(CANDIDATE_1) + "'s Student Gov Poll");
 
         schoolPolls.addCandidate("Jim", "Roberts");
         schoolPolls.addCandidate("Cindy", "Smith");
