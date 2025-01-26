@@ -26,13 +26,24 @@ public class PercentageDisplay implements Observer{
 
     }
 
+
     public void display() {
         System.out.println("\nCurrent Percent of Votes:");
-        int totalVotes = candidates.stream().mapToInt(Candidate::getWeightedVotes);
+        int totalVotes = 0;
+    for (Candidate candidate : candidates) {
+            totalVotes += candidate.getWeightedVotes();
+        }
+
         for (Candidate candidate : candidates) {
-            double percentage = (totalVotes > 0) ? (candidate.getWeightedVotes() * 100.0 / totalVotes) : 0;
+            double percentage;
+            if (totalVotes > 0) {
+                percentage = (candidate.getWeightedVotes() * 100.0) / totalVotes;
+            } else {
+                percentage = 0;
+            }
             System.out.printf("%s %.2f%%\n", candidate.getFullname(), percentage);
         }
+
     }
 
     
