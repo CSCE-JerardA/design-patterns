@@ -53,7 +53,7 @@ public class Candidate {
     }
 
 
-    public double getWeightedVotes(){
+    public int  getWeightedVotes(){
 
         return (numFirstPlaceVotes * 3) + (numSecondPlaceVotes * 2) + numThirdPlaceVotes;
 
