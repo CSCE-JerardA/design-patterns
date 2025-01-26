@@ -24,14 +24,19 @@ public class TallyDisplay implements Observer{
 
 
     public void display() {
-        System.out.println("Tally Display:");
+        System.out.println("\nCurrent Tallies:");
         for (Candidate candidate : candidates) {
-            System.out.println(candidate.getFullname() + " - Weighted Votes: " + candidate.getWeightedVotes());
+            System.out.printf("%s: First(%d), Second(%d), Third(%d)\n",
+                candidate.getFullname(),
+                candidate.getNumFirstPlaceVotes(),
+                candidate.getNumSecondPlaceVotes(),
+                candidate.getNumThirdPlaceVotes());
         }
     }
-
-
 }
+
+
+
 
     
 
