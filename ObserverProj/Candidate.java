@@ -5,8 +5,14 @@ package ObserverProj;
  */
 
 
+ /*
+  * Class representing a candidate
+  */
 public class Candidate {
 
+    /*
+     * Variables including the total amount of votes, first and last name of the candidate along with their 1st, 2nd and 3rd place votes. 
+     */
     int totalNumVotes;
     String firstName;
     String lastName;
@@ -14,12 +20,16 @@ public class Candidate {
     int numSecondPlaceVotes;
     int numThirdPlaceVotes;
 
+    /*
+     * Candidate method 
+     */
     public Candidate(String firstName, String lastName){
 
         this.firstName = firstName;
         this.lastName = lastName;
 
     }
+
 
 
     public boolean equals(String firstName, String lastName){
@@ -52,7 +62,9 @@ public class Candidate {
 
     }
 
-
+    /*
+     * Calculates the total amount of weighted votes
+     */
     public int  getWeightedVotes(){
 
         return (numFirstPlaceVotes * 3) + (numSecondPlaceVotes * 2) + numThirdPlaceVotes;

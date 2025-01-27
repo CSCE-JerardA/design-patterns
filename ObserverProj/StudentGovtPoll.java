@@ -7,7 +7,9 @@ package ObserverProj;
 import java.util.ArrayList;
 
 
-
+/*
+ * Class representing the StudentGovtPoll that implements the interface Subject
+ */
 public class StudentGovtPoll implements Subject{
 
     private ArrayList<Observer> observers;
@@ -23,11 +25,19 @@ public class StudentGovtPoll implements Subject{
     }
 
     @Override
+
+    /*
+     * Method that adds the observer to the registerObserver 
+     */
     public void registerObserver(Observer observer){
         observers.add(observer);
     }
 
     @Override
+
+    /*
+     * Method that removes the observer to the removeObserver 
+     */
     public void removeObserver(Observer observer){
         observers.remove(observer);
 
@@ -41,11 +51,17 @@ public class StudentGovtPoll implements Subject{
 
     }
 
+    /*
+     * Method that adds a candidates name
+     */
     public void addCandidate(String firstName, String lastName ){
         candidates.add(new Candidate(firstName, lastName));
 
     }
 
+    /*
+     * Method that enter the first, second and third place votes
+     */
     public void enterVotes(int firstPlace, int secondPlace, int thirdPlace){
         if (firstPlace >= 0 && firstPlace < candidates.size()) {
             candidates.get(firstPlace).addFirstVote();

@@ -6,6 +6,9 @@ package ObserverProj;
 
 import java.util.ArrayList;
 
+/*
+ * Class representing the Percentage Display while also implementing the Observer interface
+ */
 public class PercentageDisplay implements Observer{
 
     private ArrayList<Candidate> candidates;
@@ -18,7 +21,9 @@ public class PercentageDisplay implements Observer{
 
     }
 
-    
+    /*
+     * Method updating the candidate's info then displaying it
+     */
     public void update(ArrayList<Candidate> candidates) {
 
         this.candidates = candidates;
@@ -33,8 +38,7 @@ public class PercentageDisplay implements Observer{
     for (Candidate candidate : candidates) {
             totalVotes += candidate.getWeightedVotes();
         }
-
-        for (Candidate candidate : candidates) {
+    for (Candidate candidate : candidates) {
             double percentage;
             if (totalVotes > 0) {
                 percentage = (candidate.getWeightedVotes() * 100.0) / totalVotes;
