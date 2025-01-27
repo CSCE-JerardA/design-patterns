@@ -29,7 +29,7 @@ public class SchoolDriver {
         schoolPolls.addCandidate("Joy", "Lynn");
 
         for(int i=0; i < 30; i++){
-            ArrayList<Integer> choices = new ArrayList<Integer>(Arrays.asList(1, 2, 3));
+            ArrayList<Integer> choices = new ArrayList<Integer>(Arrays.asList(0, 1, 2));
             int a = choices.get(rand.nextInt(choices.size()));
             choices.remove((Integer)a);
             int b = choices.get(rand.nextInt(choices.size()));

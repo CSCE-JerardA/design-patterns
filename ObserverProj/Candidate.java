@@ -27,6 +27,9 @@ public class Candidate {
 
         this.firstName = firstName;
         this.lastName = lastName;
+        this.numFirstPlaceVotes = 0;
+        this.numSecondPlaceVotes = 0;
+        this.numThirdPlaceVotes = 0;
 
     }
 
@@ -65,9 +68,9 @@ public class Candidate {
     /*
      * Calculates the total amount of weighted votes
      */
-    public int  getWeightedVotes(){
+    public int getWeightedVotes(){
 
-        return (numFirstPlaceVotes * 3) + (numSecondPlaceVotes * 2) + numThirdPlaceVotes;
+        return numFirstPlaceVotes * 3 + numSecondPlaceVotes * 2 + numThirdPlaceVotes;
 
     }
 
