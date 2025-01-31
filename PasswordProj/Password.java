@@ -4,13 +4,11 @@ package PasswordProj;
  * @author Jerard
  */
 
-public class Password {
+abstract  class Password {
 
     String password;
     
 
-    public void getPassword(){
-
-    }
+    public abstract String getPassword();
 
 }
