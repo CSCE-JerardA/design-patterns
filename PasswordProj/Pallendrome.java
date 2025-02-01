@@ -2,7 +2,7 @@ package PasswordProj;
 
 public class Pallendrome extends PasswordDecorator{
 
-    public Palindrome(Password passwordBeginning) {
+    public Pallendrome(Password passwordBeginning) {
         super(passwordBeginning);
     }
 

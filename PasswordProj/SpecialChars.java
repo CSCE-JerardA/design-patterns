@@ -1,6 +1,6 @@
 package PasswordProj;
 
-public class SpecialChars extends PaaswordDecorator{
+public class SpecialChars extends PasswordDecorator{
     public SpecialChars(Password passwordBeginning) {
         super(passwordBeginning);
     }

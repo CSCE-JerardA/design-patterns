@@ -4,7 +4,7 @@ package PasswordProj;
  * @author Jerard Austin
  */
 
-public class PasswordDecorator extends Password {
+public abstract class PasswordDecorator extends Password {
     
     Password passwordBeginning;
 
@@ -12,9 +12,7 @@ public class PasswordDecorator extends Password {
 
     }
 
-    public String getPassword(){
-        
-    }
+    public abstract String getPassword();
     
 
 }

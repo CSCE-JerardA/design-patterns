@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class PasswordProgram {
     private Scanner reader;
 
@@ -13,6 +14,7 @@ public class PasswordProgram {
         String phrase = reader.nextLine();
 
         Password password = new EasyPassword(phrase);
+        
         System.out.println("\nEasy Password: " + password.getPassword());
 
         password = new Pallendrome(password);
