@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
+import PasswordProj.*;
 
 public class PasswordProgram {
     private Scanner reader;
 
     public PasswordProgram() {
-        reader = new Scanner(System.in);
+        this.reader = new Scanner(System.in);
     }
 
     public void run() {
@@ -14,7 +15,7 @@ public class PasswordProgram {
         String phrase = reader.nextLine();
 
         Password password = new EasyPassword(phrase);
-        
+
         System.out.println("\nEasy Password: " + password.getPassword());
 
         password = new Pallendrome(password);

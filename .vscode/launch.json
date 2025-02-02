@@ -4,7 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "PasswordProgram",
+            "request": "launch",
+            "mainClass": "PasswordProj.PasswordProgram",
+            "projectName": "CSCE247JC_3456164a"
+        },
         {
             "type": "java",
             "name": "Current File",
