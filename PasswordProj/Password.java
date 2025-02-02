@@ -6,7 +6,7 @@ package PasswordProj;
 
 abstract  class Password {
 
-    String password;
+    protected String password;
     
 
     public abstract String getPassword();

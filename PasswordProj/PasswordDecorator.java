@@ -6,13 +6,15 @@ package PasswordProj;
 
 public abstract class PasswordDecorator extends Password {
     
-    Password passwordBeginning;
+    protected Password passwordBeginning;
 
     public PasswordDecorator(Password passwordBeginning){
-
+        this.passwordBeginning = passwordBeginning;
     }
 
-    public abstract String getPassword();
+    public String getPassword(){
+        return passwordBeginning.getPassword();
+    }
     
 
 }

@@ -1,5 +1,8 @@
 package PasswordProj;
 
+import java.util.Random;
+
+
 public class RandomCasing extends PasswordDecorator{
     
     public RandomCasing(Password passwordBeginning){
@@ -9,8 +12,10 @@ public class RandomCasing extends PasswordDecorator{
     @Override
     public String getPassword() {
         StringBuilder sb = new StringBuilder();
+        Random random = new Random();
+
         for (char c : passwordBeginning.getPassword().toCharArray()) {
-            if (Math.random() > 0.5) {
+            if (random.nextBoolean()) {
                 sb.append(Character.toUpperCase(c));
             } else {
                 sb.append(Character.toLowerCase(c));
