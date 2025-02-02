@@ -1,6 +1,7 @@
+package PasswordProj;
+
 import java.util.Scanner;
 
-package PasswordProj;
 
 public class PasswordProgram {
     private Scanner reader;
