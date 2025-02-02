@@ -8,7 +8,7 @@ public class Pallendrome extends PasswordDecorator{
 
     @Override
     public String getPassword() {
-        String original = new String();
+        String original =passwordBeginning.getPassword();
         return original + new StringBuilder(original).reverse().toString();
     }
     
