@@ -10,15 +10,15 @@ public class State {
     MusicBox box;
 
     public State(MusicBox box, String twinkleFileName, String happyFileName){
-
+        this.box = box;
     }
 
     public void pressStarButton(){
-
+        System.out.println("Playing Twinkle");
     }
 
     public void pressHappyButton(){
-
+        System.out.println("Playing Happy");
     }
 
     public void pressEnglishButton(){
@@ -33,6 +33,6 @@ public class State {
 
     }
 
-    
+
 
 }

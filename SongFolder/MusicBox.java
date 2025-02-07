@@ -24,11 +24,15 @@ public class MusicBox {
         this.state = englishState;
     }
 
-
+    /*
+     * Allows user to switch to Twinkle Twinkle song
+     */
     public void pressStarButton(){
         state.pressStarButton();
     }
-
+    /*
+     * Allows user to switch to if you're happy and you know it song
+     */
     public void pressHappyButton(){
         state.pressHappyButton();
     }
