@@ -1,5 +1,7 @@
 package SongFolder;
 
+import java.util.ArrayList;
+
 public class MusicBox {
 
     private State state;
@@ -47,7 +49,7 @@ public class MusicBox {
     }
 
     public State getSpanishState(){
-
+        return spanishState;
     }
 
     public void playSong(String songName, ArrayList<String> lyrics){
