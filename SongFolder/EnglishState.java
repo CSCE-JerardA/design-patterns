@@ -7,6 +7,17 @@ public class EnglishState extends State{
     public EnglishState(MusicBox box){
         super(box);
     }
+
+    public void pressHappyButton() {
+        ArrayList<String> lyrics = FileReader.getLyrics("Happy.txt");
+        box.playSong("Happy", lyrics);
+    }
+
+
+    public void pressStarButton() {
+        ArrayList<String> lyrics = FileReader.getLyrics("TwinkleTwinkle.txt");
+        box.playSong("Twinkle Twinkle", lyrics);
+    }
     
     public void pressEnglishButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-english.txt");
