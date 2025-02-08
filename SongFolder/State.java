@@ -22,15 +22,15 @@ public class State {
     }
 
     public void pressEnglishButton(){
-
+         System.out.println("Already in English.");
     }
 
     public void pressFrenchButton(){
-
+         System.out.println("Swap French.");
     }
 
     public void pressSpanishButton(){
-
+        System.out.println("Swap Spanish.");
     }
 
 
