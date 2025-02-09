@@ -2,7 +2,7 @@ package SongFolder;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class SpanishState {
+public class SpanishState extends State{
     
 
     public SpanishState(MusicBox box){
