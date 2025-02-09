@@ -1,11 +1,13 @@
 package SongFolder;
-import java.io.FileReader;
 import java.util.ArrayList;
 
 public class FrenchState extends State{
+
+    private static String TWINKLE_FILE_NAME = "twinkle-french.txt";
+    private static String HAPPY_FILE_NAME = "happy-french.txt";
     
     public FrenchState(MusicBox box){
-        super(box);
+        super(box, TWINKLE_FILE_NAME, HAPPY_FILE_NAME);
     }
     
      public void pressHappyButton() {

@@ -2,15 +2,17 @@ package SongFolder;
 
 import java.util.ArrayList;
 
-public class State {
+public abstract class State {
     
     private ArrayList<String> starLyrics;
     private ArrayList<String> happyLyrics;
 
-    MusicBox box;
+    protected MusicBox box;
 
     public State(MusicBox box, String twinkleFileName, String happyFileName){
         this.box = box;
+        this.starLyrics = FileReader.getLyrics(twinkleFileName);
+        this.happyLyrics = FileReader.getLyrics(happyFileName);
     }
 
     public void pressStarButton(){

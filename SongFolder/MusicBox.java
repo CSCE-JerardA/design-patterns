@@ -17,9 +17,9 @@ public class MusicBox {
 
 
     public MusicBox(){
-        this.englishState = englishState;
-        this.frenchState = frenchState;
-        this.spanishState = spanishState;
+        this.englishState = new EnglishState(this);
+        this.frenchState = new FrenchState(this);
+        this.spanishState = new SpanishState(this);
 
         this.state = englishState;
     }
@@ -52,7 +52,11 @@ public class MusicBox {
     }
 
     public void setState(State state){
+        if (state != null) {
         this.state = state;
+    } else {
+        System.out.println("Error: Attempted to set null state!");
+    }
     }
 
     public State getEnglishState(){
