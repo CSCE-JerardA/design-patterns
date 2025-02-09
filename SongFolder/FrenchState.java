@@ -12,13 +12,13 @@ public class FrenchState extends State{
     
      public void pressHappyButton() {
         ArrayList<String> lyrics = FileReader.getLyrics("happy-french.txt");
-        box.playSong("Happy", lyrics);
+        box.playSong("Happy in French", lyrics);
     }
 
 
     public void pressStarButton() {
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-french.txt");
-        box.playSong("Brille Brille", lyrics);
+        box.playSong("Twinkle Twinkle in French", lyrics);
     }
     
     public void pressEnglishButton(){
