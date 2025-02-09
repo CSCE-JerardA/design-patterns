@@ -12,24 +12,25 @@ public class SpanishState extends State{
     
      public void pressHappyButton() {
         ArrayList<String> lyrics = FileReader.getLyrics("happy-spanish.txt");
-        box.playSong("Happy", lyrics);
+        box.setState(box.getSpanishState());
     }
 
 
     public void pressStarButton() {
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-spanish.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
+        box.setState(box.getSpanishState());
+        System.out.println("Switched to Twinkle Twinkle Spanish!");
     }
     
     public void pressEnglishButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-english.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
-        System.out.println("Already in English!");
+        box.setState(box.getEnglishState());
+        System.out.println("Switched to English!");
     }
 
     public void pressFrenchButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-french.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
+        box.setState(box.getFrenchState());
         System.out.println("Switched to French!");
     }
 
@@ -37,6 +38,6 @@ public class SpanishState extends State{
     public void pressSpanishButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-french.txt");
         box.playSong("Twinkle Twinkle", lyrics);
-        System.out.println("Switched to Spanish!");
+        System.out.println("Already in Spanish!");
     }
 }
