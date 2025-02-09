@@ -23,12 +23,16 @@ public class LanguageSongs {
 
             if(command.equals("e")){
                 box.pressEnglishButton();
+                
             } else if(command.equals("f")){
                 box.pressFrenchButton();
+                
             } else if(command.equals("s")){
                 box.pressSpanishButton();
+                
             } else if(command.equals("t")){
                 box.pressStarButton();
+                
             } else if(command.equals("h")){
                 box.pressHappyButton();
             } else {

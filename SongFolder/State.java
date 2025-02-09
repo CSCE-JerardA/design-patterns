@@ -7,7 +7,7 @@ public abstract class State {
     private ArrayList<String> starLyrics;
     private ArrayList<String> happyLyrics;
 
-    protected MusicBox box;
+    MusicBox box;
 
     public State(MusicBox box, String twinkleFileName, String happyFileName){
         this.box = box;
@@ -16,10 +16,13 @@ public abstract class State {
     }
 
     public void pressStarButton(){
+        box.playSong("Twinkle Twinkle", starLyrics);
         System.out.println("Playing Twinkle");
+
     }
 
     public void pressHappyButton(){
+        box.playSong("If you're happy and you know it", happyLyrics);
         System.out.println("Playing Happy");
     }
 

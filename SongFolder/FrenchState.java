@@ -18,25 +18,25 @@ public class FrenchState extends State{
 
     public void pressStarButton() {
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-french.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
+        box.playSong("Brille Brille", lyrics);
     }
     
     public void pressEnglishButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-english.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
+        box.playSong("Twinkle Twinkle ", lyrics);
         System.out.println("Switched to English!");
     }
 
     public void pressFrenchButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-french.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
+        box.setState(box.getFrenchState());
         System.out.println("Already in French!");
     }
 
 
     public void pressSpanishButton(){
-        ArrayList<String> lyrics = FileReader.getLyrics("twinkle-french.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
+        ArrayList<String> lyrics = FileReader.getLyrics("twinkle-spanish.txt");
+        box.playSong(HAPPY_FILE_NAME, lyrics);
         System.out.println("Switched to Spanish!");
     }
 

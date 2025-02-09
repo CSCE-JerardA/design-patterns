@@ -3,12 +3,10 @@ import java.util.ArrayList;
 
 public class EnglishState extends State{
 
-    private static final String TWINKLE_FILE_NAME = "twinkle-english.txt";
-    private static final String HAPPY_FILE_NAME = "happy-english.txt";
-
+    
 
     public EnglishState(MusicBox box){
-        super(box, TWINKLE_FILE_NAME, HAPPY_FILE_NAME);
+        super(box, "twinkle-english.txt", "happy-english.txt");
     }
 
     public void pressHappyButton() {
@@ -24,7 +22,7 @@ public class EnglishState extends State{
     
     public void pressEnglishButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-english.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
+        box.setState(box.getEnglishState());
         System.out.println("Already in English!");
     }
 
