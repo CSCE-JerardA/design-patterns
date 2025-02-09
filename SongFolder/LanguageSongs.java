@@ -1,5 +1,8 @@
+package SongFolder;
+
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
+
 public class LanguageSongs {
     private Scanner reader;
 
@@ -29,7 +32,7 @@ public class LanguageSongs {
             } else if(command.equals("h")){
                 box.pressHappyButton();
             } else {
-                System.out.println("Inalid command");
+                System.out.println("Invalid command");
             }
         }
 
