@@ -10,7 +10,7 @@ public class FileReader {
 
         try {
             File file = new File(fileName);
-            Scanner reader = new Scanner(new File("C:\\Users\\jcaus\\OneDrive\\Documents\\GitHub\\CSCE247JC\\SongFolder\\songs\\happy-english.txt"));
+            Scanner reader = new Scanner(file);
             while (reader.hasNextLine()) {
                 String line = reader.nextLine();
                 lyrics.add(line);
