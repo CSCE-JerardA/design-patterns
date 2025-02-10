@@ -7,7 +7,7 @@ public abstract class State {
     private ArrayList<String> starLyrics;
     private ArrayList<String> happyLyrics;
 
-    MusicBox box;
+    protected MusicBox box;
 
     public State(MusicBox box, String twinkleFileName, String happyFileName){
         this.box = box;
@@ -26,17 +26,11 @@ public abstract class State {
         System.out.println("Playing Happy");
     }
 
-    public void pressEnglishButton(){
-         System.out.println("Already in English.");
-    }
+    public abstract void pressEnglishButton();
 
-    public void pressFrenchButton(){
-         System.out.println("Swap French.");
-    }
+    public abstract void pressFrenchButton();
 
-    public void pressSpanishButton(){
-        System.out.println("Swap Spanish.");
-    }
+    public abstract void pressSpanishButton();
 
 
 

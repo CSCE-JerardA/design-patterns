@@ -10,23 +10,27 @@ public class FrenchState extends State{
         super(box, TWINKLE_FILE_NAME, HAPPY_FILE_NAME);
     }
     
+    @Override
      public void pressHappyButton() {
         ArrayList<String> lyrics = FileReader.getLyrics("happy-french.txt");
         box.playSong("Happy in French", lyrics);
     }
 
 
+    @Override
     public void pressStarButton() {
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-french.txt");
         box.playSong("Twinkle Twinkle in French", lyrics);
     }
     
+    @Override
     public void pressEnglishButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-english.txt");
         box.playSong("Twinkle Twinkle ", lyrics);
         System.out.println("Switched to English!");
     }
 
+    @Override
     public void pressFrenchButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-french.txt");
         box.setState(box.getFrenchState());

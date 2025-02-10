@@ -5,8 +5,6 @@ package SongFolder;
  */
 import java.util.ArrayList;
 
-import SongFolder.EnglishState;
-
 public class MusicBox {
 
     MusicBox box;

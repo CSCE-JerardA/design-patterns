@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LanguageSongs {
     private Scanner reader;
+    MusicBox box;
 
     public LanguageSongs() {
         reader = new Scanner(System.in);
