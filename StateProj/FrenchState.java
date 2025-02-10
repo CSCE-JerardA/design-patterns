@@ -3,10 +3,11 @@ import java.util.ArrayList;
 
 public class FrenchState extends State{
 
-    
+    private static final String twinkle_file = "songs/twilight-french.txt";
+    private static final String happy_file = "songs/happy-french.txt";
     
     public FrenchState(MusicBox box){
-        super(box, "twinkle-french.txt", "happy-french.txt");
+        super(box, twinkle_file, happy_file);
     }
     
     
