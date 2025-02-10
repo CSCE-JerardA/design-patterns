@@ -6,9 +6,9 @@ package StateProj;
 
 public class EnglishState extends State{
 
-    protected MusicBox box;
+    MusicBox box;
 
-    private static final String twinkle_file = "twilight-english.txt";
+    private static final String twinkle_file = "twinkle-english.txt";
     private static final String happy_file = "happy-english.txt";
     
     public EnglishState(MusicBox box){
@@ -30,6 +30,7 @@ public class EnglishState extends State{
     }
 
 
+    @Override
     public void pressSpanishButton(){
         System.out.println("Switched to Spanish!");
         box.setState(box.getSpanishState());

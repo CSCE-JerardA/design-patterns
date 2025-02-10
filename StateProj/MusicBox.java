@@ -9,7 +9,6 @@ import java.util.ArrayList;
 
 public class MusicBox {
 
-    MusicBox box;
     /*
      * Variables making the different languaged states private
      */
@@ -58,7 +57,7 @@ public class MusicBox {
         if (state != null) {
         this.state = state;
     } else {
-        System.out.println("Error: Attempted to set null state!");
+        System.out.println("Error: Tried to set a null state!");
     }
     }
 

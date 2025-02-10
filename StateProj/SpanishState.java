@@ -6,7 +6,7 @@ public class SpanishState extends State{
 
     MusicBox box;
 
-    private static final String twinkle_file = "twilight-spanish.txt";
+    private static final String twinkle_file = "twinkle-spanish.txt";
     private static final String happy_file = "happy-spanish.txt";
     
     public SpanishState(MusicBox box){
@@ -29,6 +29,7 @@ public class SpanishState extends State{
     }
 
 
+    @Override
     public void pressSpanishButton(){
         System.out.println("Already in Spanish!");
         
