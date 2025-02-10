@@ -1,12 +1,21 @@
 package StateProj;
 
+/*
+ * @author Jerard Austin
+ */
+
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-
+/*
+ * Creates language class for the states to be ran
+ */
 public class LanguageSongs {
     private Scanner reader;
 
+    /*
+     * Creates a new reader in order to determine which state is being called
+     */
     public LanguageSongs() {
         reader = new Scanner(System.in); 
         clear();
@@ -14,6 +23,9 @@ public class LanguageSongs {
         
     }
 
+    /*
+     * Method that allows the user to run the code
+     */
     public void run() {
         MusicBox box = new MusicBox();
         
@@ -46,11 +58,17 @@ public class LanguageSongs {
         System.out.println("Goodbye");
     }
 
+    /*
+     * Method that allows user to clear the code
+     */
     public static void clear() {
         System.out.print("\033[H\033[2J");
             System.out.flush();
     }
 
+    /*
+     * Method that displays the time out error to user for taking long
+     */
     public static void sleep() {
         try {
             TimeUnit.MILLISECONDS.sleep(1000);
