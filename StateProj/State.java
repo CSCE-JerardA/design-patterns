@@ -1,15 +1,27 @@
 package StateProj;
+/*
+ * @Author Jerard Austin
+ */
 
 import java.util.ArrayList;
 ;
 
+/*
+ * Creates the class state for the other classes to operate from
+ */
 public abstract  class State {
     
+    /*
+     * Variables from the "twinkle" and "happy"
+     */
     private ArrayList<String> starLyrics;
     private ArrayList<String> happyLyrics;
 
     MusicBox box;
 
+    /*
+     * Creates a method for State class
+     */
     public State(MusicBox box, String twinkleFileName, String happyFileName){
         this.box = box;
         this.starLyrics = FileReader.getLyrics(twinkleFileName);
