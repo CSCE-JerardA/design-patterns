@@ -6,8 +6,8 @@ public class SpanishState extends State{
 
     MusicBox box;
 
-    private static final String twinkle_file = "twilight-french.txt";
-    private static final String happy_file = "happy-french.txt";
+    private static final String twinkle_file = "twilight-spanish.txt";
+    private static final String happy_file = "happy-spanish.txt";
     
     public SpanishState(MusicBox box){
         super(box, twinkle_file, happy_file);

@@ -8,8 +8,8 @@ public class EnglishState extends State{
 
     MusicBox box;
 
-    private static final String twinkle_file = "twilight-french.txt";
-    private static final String happy_file = "happy-french.txt";
+    private static final String twinkle_file = "twilight-english.txt";
+    private static final String happy_file = "happy-english.txt";
     
     public EnglishState(MusicBox box){
         super(box, twinkle_file, happy_file);
