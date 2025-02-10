@@ -1,42 +1,31 @@
-package SongFolder;
+package StateProj;
 import java.util.ArrayList;
+import java.io.FileReader;
 
 public class SpanishState extends State{
     
-    
+    MusicBox box;
 
     public SpanishState(MusicBox box){
-        super(box, "twinkle-spanish.txt", "");
-    }
-    
-     public void pressHappyButton() {
-        ArrayList<String> lyrics = FileReader.getLyrics("happy-spanish.txt");
-        box.playSong("Happy in Spanish", lyrics);
-    }
-
-
-    public void pressStarButton() {
-        ArrayList<String> lyrics = FileReader.getLyrics("twinkle-spanish.txt");
-        box.setState(box.getSpanishState());
-        System.out.println("Switched to Twinkle Twinkle Spanish!");
+        super(box, "twinkle-spanish.txt", "happy-spanish.txt");
     }
     
     public void pressEnglishButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-english.txt");
-        box.setState(box.getEnglishState());
+        box.playSong("Twinkle Twinkle Spanish", lyrics);
         System.out.println("Switched to English!");
     }
 
     public void pressFrenchButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-french.txt");
-        box.setState(box.getFrenchState());
+        box.playSong("Twinkle Twinkle French", lyrics);
         System.out.println("Switched to French!");
     }
 
 
     public void pressSpanishButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-spanish.txt");
-        box.setState(box.getSpanishState());
+        box.playSong("Twinkle Twinkle Spanish", lyrics);
         System.out.println("Already in Spanish!");
     }
 }

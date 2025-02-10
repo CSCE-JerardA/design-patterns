@@ -1,15 +1,17 @@
-package StateProj.songs;
+package StateProj;
 
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+
 public class LanguageSongs {
     private Scanner reader;
-    MusicBox box;
 
     public LanguageSongs() {
-        reader = new Scanner(System.in);
+        reader = new Scanner(System.in); 
         clear();
+
+        
     }
 
     public void run() {

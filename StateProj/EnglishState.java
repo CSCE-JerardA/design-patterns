@@ -1,5 +1,6 @@
-package SongFolder;
+package StateProj;
 import java.util.ArrayList;
+import java.io.FileReader;
 
 /*
  * @author Jerard Austin
@@ -7,26 +8,12 @@ import java.util.ArrayList;
 
 public class EnglishState extends State{
 
-    
+    MusicBox box;
 
     public EnglishState(MusicBox box){
         super(box, "twinkle-english.txt", "happy-english.txt");
     }
-
-    @Override
-    public void pressHappyButton() {
-        ArrayList<String> lyrics = FileReader.getLyrics("happy-english.txt");
-        box.playSong("Happy", lyrics);
-    }
-
-
-    @Override
-    public void pressStarButton() {
-        ArrayList<String> lyrics = FileReader.getLyrics("twinkle-english.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
-    }
     
-    @Override
     public void pressEnglishButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-english.txt");
         box.setState(box.getEnglishState());

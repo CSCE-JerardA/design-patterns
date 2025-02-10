@@ -1,13 +1,14 @@
-package StateProj.songs;
+package StateProj;
 
 import java.util.ArrayList;
+import java.io.FileReader;
 
-public abstract class State {
+public abstract  class State {
     
     private ArrayList<String> starLyrics;
     private ArrayList<String> happyLyrics;
 
-    protected MusicBox box;
+    MusicBox box;
 
     public State(MusicBox box, String twinkleFileName, String happyFileName){
         this.box = box;
