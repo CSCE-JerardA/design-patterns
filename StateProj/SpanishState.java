@@ -6,7 +6,7 @@ public class SpanishState extends State{
     MusicBox box;
 
     public SpanishState(MusicBox box){
-        super(box, "twinkle-spanish.txt", "happy-spanish.txt");
+        super(box, "C:/Users/jcaus/OneDrive/Documents/GitHub/CSCE247/StateProj/twinkle-spanish.txt", "C:/Users/jcaus/OneDrive/Documents/GitHub/CSCE247/StateProj/happy-spanish.txt");
     }
     
     public void pressEnglishButton(){
