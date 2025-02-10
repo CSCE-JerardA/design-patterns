@@ -6,7 +6,7 @@ package StateProj;
 
 public class EnglishState extends State{
 
-    MusicBox box;
+    protected MusicBox box;
 
     private static final String twinkle_file = "twilight-english.txt";
     private static final String happy_file = "happy-english.txt";
