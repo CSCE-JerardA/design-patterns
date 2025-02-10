@@ -3,16 +3,15 @@ import java.util.ArrayList;
 
 public class SpanishState extends State{
     
-    private static final String TWINKLE_FILE_NAME = "twinkle-spanish.txt";
-    private static final String HAPPY_FILE_NAME = "happy-spanish.txt";
+    
 
     public SpanishState(MusicBox box){
-        super(box, TWINKLE_FILE_NAME, HAPPY_FILE_NAME);
+        super(box, "twinkle-spanish.txt", "");
     }
     
      public void pressHappyButton() {
         ArrayList<String> lyrics = FileReader.getLyrics("happy-spanish.txt");
-        box.playSong(HAPPY_FILE_NAME, lyrics);
+        box.playSong("Happy in Spanish", lyrics);
     }
 
 
@@ -37,7 +36,7 @@ public class SpanishState extends State{
 
     public void pressSpanishButton(){
         ArrayList<String> lyrics = FileReader.getLyrics("twinkle-spanish.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
+        box.setState(box.getSpanishState());
         System.out.println("Already in Spanish!");
     }
 }
