@@ -1,4 +1,4 @@
-package SongFolder;
+package StateProj;
 import java.util.ArrayList;
 
 public class FrenchState extends State{

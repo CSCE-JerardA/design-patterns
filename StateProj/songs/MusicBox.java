@@ -1,4 +1,4 @@
-package SongFolder;
+package StateProj.songs;
 
 /*
  * @author Jerard Austin
