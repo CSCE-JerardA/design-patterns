@@ -1,6 +1,5 @@
 package StateProj;
 import java.util.ArrayList;
-import java.io.FileReader;
 
 public class SpanishState extends State{
     

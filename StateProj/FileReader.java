@@ -17,7 +17,7 @@ public class FileReader {
             }
             reader.close();
         } catch (FileNotFoundException e) {
-            System.out.println("Error reading file.");
+            System.out.println("Error reading file: " + fileName);
             e.printStackTrace();
         }
 

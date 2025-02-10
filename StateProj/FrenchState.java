@@ -12,7 +12,7 @@ public class FrenchState extends State{
     
     @Override
     public void pressEnglishButton(){
-        ArrayList<String> lyrics = FileReader.getLyrics("twinkle-english.txt");
+        ArrayList<String> lyrics = FileReader.getLyrics("");
         box.playSong("Twinkle Twinkle ", lyrics);
         System.out.println("Switched to English!");
     }
