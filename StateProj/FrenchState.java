@@ -2,8 +2,8 @@ package StateProj;
 
 public class FrenchState extends State{
 
-    private static final String twinkle_file = "twinkle-french.txt";
-    private static final String happy_file = "happy-french.txt";
+    private static final String twinkle_file = "songs/twinkle-french.txt";
+    private static final String happy_file = "songs/happy-french.txt";
     
     public FrenchState(MusicBox box){
         super(box, twinkle_file, happy_file);
