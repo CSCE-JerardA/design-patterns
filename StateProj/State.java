@@ -28,12 +28,18 @@ public abstract  class State {
         this.happyLyrics = FileReader.getLyrics(happyFileName);
     }
 
+    /*
+     * Creates method displaying the name of the song file along with the lyrics within it
+     */
     public void pressStarButton(){
         box.playSong("Twinkle Twinkle", starLyrics);
         System.out.println("Playing Twinkle");
 
     }
 
+    /*
+     * Creates method displaying the name of the song file along with the lyrics within it
+     */
     public void pressHappyButton(){
         box.playSong("If you're happy and you know it", happyLyrics);
         System.out.println("Playing Happy");
