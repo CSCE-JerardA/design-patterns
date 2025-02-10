@@ -1,5 +1,4 @@
 package StateProj;
-import java.util.ArrayList;
 
 /*
  * @author Jerard Austin
@@ -9,27 +8,32 @@ public class EnglishState extends State{
 
     MusicBox box;
 
+    private static final String twinkle_file = "twilight-french.txt";
+    private static final String happy_file = "happy-french.txt";
+    
     public EnglishState(MusicBox box){
-        super(box, "C:/Users/jcaus/OneDrive/Documents/GitHub/CSCE247/StateProj/twinkle-english.txt", "C:/Users/jcaus/OneDrive/Documents/GitHub/CSCE247/StateProj/happy-english.txt");
+        super(box, twinkle_file, happy_file);
     }
     
+    
+    @Override
     public void pressEnglishButton(){
-        ArrayList<String> lyrics = FileReader.getLyrics("C:/Users/jcaus/OneDrive/Documents/GitHub/CSCE247/StateProj/twinkle-english.txt");
-        box.setState(box.getEnglishState());
-        System.out.println("Already in English!");
+        System.out.println("Already in French!");
+        
+        
     }
 
+    @Override
     public void pressFrenchButton(){
-        ArrayList<String> lyrics = FileReader.getLyrics("C:/Users/jcaus/OneDrive/Documents/GitHub/CSCE247/StateProj/twinkle-french.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
         System.out.println("Switched to French!");
+        box.setState(box.getFrenchState());
     }
 
 
     public void pressSpanishButton(){
-        ArrayList<String> lyrics = FileReader.getLyrics("C:/Users/jcaus/OneDrive/Documents/GitHub/CSCE247/StateProj/twinkle-spanish.txt");
-        box.playSong("Twinkle Twinkle", lyrics);
         System.out.println("Switched to Spanish!");
+        box.setState(box.getSpanishState());
+       
     }
 
 }
