@@ -1,3 +1,5 @@
+package Boiler;
+
 import java.util.Scanner;
 import java.util.Iterator;
 
