@@ -5,6 +5,10 @@ package Boiler;
  */
 
 public class Question {
+
+    private String ANSI_RED;
+    private String ANSI_GREEN;
+    private 
     
     private int num1;
     private int num2;
@@ -31,5 +35,5 @@ public class Question {
     public String toString(){
 
     }
-    
+
 }
