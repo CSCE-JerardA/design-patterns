@@ -8,7 +8,7 @@ public class Question {
 
     private String ANSI_RED;
     private String ANSI_GREEN;
-    private 
+    private String ANSI_BLACK;
     
     private int num1;
     private int num2;
