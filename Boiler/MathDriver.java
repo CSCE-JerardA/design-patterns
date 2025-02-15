@@ -46,7 +46,7 @@ public class MathDriver {
     }
 
     /*
-     * Generates the results from the user's input which takes from the getInstance and getIterator methods from the MathGame class
+     * Generates the results from the user's input which takes from the getInstance and getIterator methods from the MathGame class and displays it
      */
     private void displayResults(){
         MathGame game = MathGame.getInstance();
@@ -64,6 +64,9 @@ public class MathDriver {
         System.out.println("\nTotal: " + total + "/" + game.getNumQuestions());
     }
 
+    /*
+     * Returns the answers as integers unless nothing was returned resulting in invalid data
+     */
     private int getInt(String prompt){
         while(true){
             System.out.print(prompt);
@@ -77,6 +80,9 @@ public class MathDriver {
         
     }
 
+    /*
+     * Runs the program
+     */
     public static void main(String[] args){
         MathDriver driver = new MathDriver();
         driver.run();

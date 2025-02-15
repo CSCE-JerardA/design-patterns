@@ -66,10 +66,6 @@ public class Question {
      */
     public String toString(){
 
-        if (userAnswer == Integer.MIN_VALUE) {
-            return "Invalid Data";
-        }
-
         String result = getQuestion() + " You answered: " + userAnswer;
 
         if (isCorrect()) {
@@ -84,5 +80,6 @@ public class Question {
         return result;
     
         }
+        
 
 }
