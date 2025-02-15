@@ -9,9 +9,9 @@ package Boiler;
   */
 public class Question {
 
-    private String ANSI_RED;
-    private String ANSI_GREEN;
-    private String ANSI_BLACK;
+    private String ANSI_RED = "\u001B[32m";
+    private String ANSI_GREEN = "\u001B[31m";
+    private String ANSI_BLACK = "\u001B[30m";
     
     private int num1;
     private int num2;
