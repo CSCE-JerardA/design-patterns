@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class MathGame {
     
-    private static int NUM_QUESTIONS = 5;
+    private static final int NUM_QUESTIONS = 5;
 
     private MathGame mathGame;
 

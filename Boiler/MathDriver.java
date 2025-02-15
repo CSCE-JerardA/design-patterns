@@ -2,11 +2,14 @@ package Boiler;
 
 import java.util.Scanner;
 import java.util.Iterator;
+import java.util.Random;
+import java.util.ArrayList;
 
 
 
 public class MathDriver {
     private Scanner reader;
+    private MathGame mathGame;
 
     public MathDriver() {
         reader = new Scanner(System.in);
@@ -42,7 +45,7 @@ public class MathDriver {
                 total++;
             }
         }
-        System.out.println("\nTotal: " + total + "/" + game.NUM_QUESTIONS);
+        System.out.println("\nTotal: " + total + "/" + game.getNumQuestions());
     }
 
     private int getInt(String prompt){

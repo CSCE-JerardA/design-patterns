@@ -47,7 +47,15 @@ public class Question {
     }
 
     public String toString(){
-        return getQuestion() + " Your answer: " + userAnswer + (isCorrect() ? ANSI_GREEN + " (Correct)" : ANSI_RED + " (Wrong, correct answer: " + answer + ")") + ANSI_BLACK;
-    }
+        String result = getQuestion() + " Your answer: " + userAnswer;
+        if (isCorrect()) {
+            result += ANSI_GREEN + " (Correct)";
+        } else {
+            result += ANSI_RED + " (Wrong, correct answer: " + answer + ")";
+        }
+        result += ANSI_BLACK;
+        return result;
+    
+        }
 
 }
