@@ -9,8 +9,8 @@ package Boiler;
   */
 public class Question {
 
-    private String ANSI_RED = "\u001B[32m";
-    private String ANSI_GREEN = "\u001B[31m";
+    private String ANSI_RED = "\u001B[31m";
+    private String ANSI_GREEN = "\u001B[32m";
     private String ANSI_BLACK = "\u001B[30m";
     
     private int num1;
@@ -65,12 +65,21 @@ public class Question {
      * Determines whether the answer is correct or not then displays it
      */
     public String toString(){
-        String result = getQuestion() + " Your answer: " + userAnswer;
+
+        if (userAnswer == Integer.MIN_VALUE) {
+            return "Invalid Data";
+        }
+
+        String result = getQuestion() + " You answered: " + userAnswer;
+
         if (isCorrect()) {
             result += ANSI_GREEN + " Correct!! ";
-        } else {
+        }
+        if(!isCorrect()){
             result += ANSI_RED + " Wrong, correct answer: " + answer + "";
         }
+        
+        
         result += ANSI_BLACK;
         return result;
     
