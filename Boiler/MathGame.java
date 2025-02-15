@@ -1,5 +1,9 @@
 package Boiler;
 
+/*
+ * @author Jerard Austin
+ */
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
@@ -9,7 +13,7 @@ public class MathGame {
     
     private static final int NUM_QUESTIONS = 5;
 
-    private MathGame mathGame;
+    private static MathGame mathGame;
 
     private ArrayList<Question> questions;
 
@@ -30,7 +34,7 @@ public class MathGame {
         }
     }
 
-    public MathGame getInstance(){
+    public static MathGame getInstance(){
         if (mathGame == null) {
             mathGame = new MathGame();
         }

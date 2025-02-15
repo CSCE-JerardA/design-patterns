@@ -1,15 +1,13 @@
 package Boiler;
 
-import java.util.Scanner;
 import java.util.Iterator;
-import java.util.Random;
-import java.util.ArrayList;
+import java.util.Scanner;
 
 
 
 public class MathDriver {
     private Scanner reader;
-    private MathGame mathGame;
+    
 
     public MathDriver() {
         reader = new Scanner(System.in);
