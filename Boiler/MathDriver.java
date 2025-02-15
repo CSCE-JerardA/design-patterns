@@ -1,24 +1,39 @@
 package Boiler;
 
+/*
+ * @author Jerard Austin
+ */
+
 import java.util.Iterator;
 import java.util.Scanner;
 
 
-
+/*
+ * Creates math driver class
+ */
 public class MathDriver {
     private Scanner reader;
     
 
+    /*
+     * Creates method for math driver class and make a scanner
+     */
     public MathDriver() {
         reader = new Scanner(System.in);
         System.out.println("Let's have fun with Math!");
     }
 
+    /*
+     * Creates a method that runs the program which asks questions to a user and displays the result of them
+     */
     public void run() {
         askQuestions(); 
         displayResults();
     }
 
+    /*
+     * Generates the questions for the user to answer which takes from the getInstance and getIterator methods from the MathGame class
+     */
     private void askQuestions(){
         MathGame game = MathGame.getInstance();
         Iterator<Question> questions = game.getIterator();
@@ -30,6 +45,9 @@ public class MathDriver {
         }
     }
 
+    /*
+     * Generates the results from the user's input which takes from the getInstance and getIterator methods from the MathGame class
+     */
     private void displayResults(){
         MathGame game = MathGame.getInstance();
         System.out.println("\nResults:");
