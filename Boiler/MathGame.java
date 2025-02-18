@@ -36,8 +36,8 @@ public class MathGame {
         Operand[] operands = Operand.values();
 
         for (int i = 0; i < NUM_QUESTIONS; i++) {
-            int num1 = rand.nextInt(10) + 1;
-            int num2 = rand.nextInt(10) + 1;
+            int num1 = rand.nextInt(100) + 1;
+            int num2 = rand.nextInt(100) + 1;
             Operand operand = operands[rand.nextInt(operands.length)];
             questions.add(new Question(num1, num2, operand));
         }
