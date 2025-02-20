@@ -10,7 +10,12 @@ public class Airline {
     private ArrayList<Flight> flights;
 
     public Airline(String title){
+        this.title = title;
+        this.flights = new ArrayList<>();
+    }
 
+    public void addFlight(Flight flight){
+        flights.add(flight);
     }
 
     public String getTitle(){
@@ -18,7 +23,7 @@ public class Airline {
     }
 
     public FlightIteratorImp createIterator(String fromCode, String toCode){
-        
+        return new FlightIteratorImp(flights, fromCode, toCode);
     }
 
 }

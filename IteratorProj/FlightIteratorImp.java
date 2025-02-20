@@ -1,11 +1,11 @@
 package IteratorProj;
 
 import java.util.ArrayList;
-
+import java.util.Iterator;
   
 
 
-public class FlightIteratorImp implements FlightIterator<Flight>{
+public class FlightIterator implements FlightIterator<Flight>{
 
     private ArrayList<Flight> flights;
 
@@ -22,11 +22,23 @@ public class FlightIteratorImp implements FlightIterator<Flight>{
 
     public bool hasNext(){
 
-        return true;
+        while (position < flights.size()) {
+            Flight flight = flights.get(position);
+            if (flight.sameLoc(from, to)) {
+                return true;
+            }
+            position++;
+        }
+        return false;
+    
     }
 
     public Flight next(){
-        
+        if (hasNext()) {
+            return flights.get(position++);
+        }
+        return null;
+    }
     }
 
 
