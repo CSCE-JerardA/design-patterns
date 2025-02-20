@@ -15,9 +15,19 @@ public class AirlineDriver {
         System.out.print("Enter Destination Airport Code: ");
         String toCode = reader.nextLine();
 
+        Airport from = getAirport(fromCode);
+        Airport to = getAirport(toCode);
+
+        if (from == null || to == null) {
+                System.out.println("Invalid airport code entered.");
+                return;
+            }
+
         Iterator<Flight> flights = american.createIterator(fromCode, toCode);
 
         System.out.println();
+
+
 
         if(flights == null){
             return;
