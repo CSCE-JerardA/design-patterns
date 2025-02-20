@@ -1,6 +1,5 @@
 package IteratorProj;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /*
@@ -24,7 +23,7 @@ public class Airline {
         return title;
     }
 
-    public FlightIteratorImp createIterator(ArrayList<Flight> flights, String fromCode, String toCode){
+    public FlightIteratorImp createIterator(Airport fromCode, Airport toCode){
         return new FlightIteratorImp(flights, fromCode, toCode);
     }
 
