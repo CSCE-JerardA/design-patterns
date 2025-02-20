@@ -3,7 +3,6 @@ package IteratorProj;
 import java.util.ArrayList;
   
 
-
 public class FlightIteratorImp implements FlightIterator{
 
     private ArrayList<Flight> flights;
