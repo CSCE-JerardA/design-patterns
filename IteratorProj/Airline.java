@@ -17,7 +17,7 @@ public class Airline {
         return title;
     }
 
-    public FlightIterator createIterator(String fromCode, String toCode){
+    public FlightIteratorImp createIterator(String fromCode, String toCode){
         
     }
 
