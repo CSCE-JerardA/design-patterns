@@ -1,6 +1,5 @@
 package IteratorProj;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class AirlineDriver {
@@ -15,8 +14,8 @@ public class AirlineDriver {
         System.out.print("Enter Destination Airport Code: ");
         String toCode = reader.nextLine();
 
-        Iterator<Flight> flights = american.createIterator(fromCode, toCode);
-        
+        FlightIterator flights = american.createIterator(Airport.valueOf(fromCode.toUpperCase()), Airport.valueOf(toCode.toUpperCase()));
+
         System.out.println();
 
         
