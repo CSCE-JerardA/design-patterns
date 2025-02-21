@@ -15,6 +15,8 @@ public class AirlineDriver {
         System.out.print("Enter Destination Airport Code: ");
         String toCode = reader.nextLine();
 
+         
+
         Airport from = getAirport(fromCode);
         Airport to = getAirport(toCode);
 
@@ -23,9 +25,10 @@ public class AirlineDriver {
                 return;
             }
 
-        Iterator<Flight> flights = american.createIterator(fromCode, toCode);
-
+        FlightIterator flights = american.createIterator(String from, String to);
         System.out.println();
+
+}
 
 
 

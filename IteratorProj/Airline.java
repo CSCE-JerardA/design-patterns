@@ -23,7 +23,7 @@ public class Airline {
         return title;
     }
 
-    public FlightIteratorImp createIterator(Airport fromCode, Airport toCode){
+    public FlightIterator createIterator(Airport fromCode, Airport toCode){
         return new FlightIteratorImp(flights, fromCode, toCode);
     }
 
