@@ -12,7 +12,7 @@ public class FlightLoader {
     
     public ArrayList<Flight> getFlights(){
         ArrayList<Flight> flights = new ArrayList<>();
-        String fileName = "flight.txt"; // Ensure this file exists in the project directory
+        String fileName = "flights.txt"; // Ensure this file exists in the project directory
 
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;

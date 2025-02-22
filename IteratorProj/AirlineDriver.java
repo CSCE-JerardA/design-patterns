@@ -8,6 +8,9 @@ public class AirlineDriver {
         Airline american = new Airline("American Airlines");
         Scanner reader = new Scanner(System.in);
 
+        FlightLoader flightLoader = new FlightLoader();
+        american.addFlights(flightLoader.getFlights());
+
         System.out.print("\nEnter Origin Airport Code: ");
         String fromCode = reader.nextLine();
 
@@ -21,6 +24,7 @@ public class AirlineDriver {
         
 
         if(flights == null){
+            System.out.println("No flights were found! ");
             return;
         }
 

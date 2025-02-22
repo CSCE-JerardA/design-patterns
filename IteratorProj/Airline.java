@@ -27,5 +27,9 @@ public class Airline {
         return new FlightIteratorImp(flights, fromCode, toCode);
     }
 
+    public void addFlights(ArrayList<Flight> flights) {
+        this.flights.addAll(flights);
+    }
+
 
 }
