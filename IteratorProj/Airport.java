@@ -1,5 +1,10 @@
 package IteratorProj;
 
+/*
+ * Enumeration representing different airports.
+ * These values must match those used in the flight data file.
+ */
+
 public enum Airport {
     ATL("Hartsfield-Jackson Atlanta International Airport"),
     DFW("Dallas–Fort Worth International Airport"),
@@ -24,6 +29,9 @@ public enum Airport {
 
     public final String label;
 
+    /*
+     * Sets the label
+     */
     private Airport(String label) {
         this.label = label;
     }

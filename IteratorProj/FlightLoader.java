@@ -8,17 +8,28 @@ import java.io.*;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
+/*
+ * The FlightLoader class is responsible for loading flights from a text file.
+ * It reads flight details from the file and creates Flight objects.
+ */
 public class FlightLoader {
     
+    /*
+     * Creates getFlights constructor
+     * @return An ArrayList of Flight objects loaded from the file 
+     */
     public ArrayList<Flight> getFlights(){
         ArrayList<Flight> flights = new ArrayList<>();
-        String fileName = "flights.txt"; // Ensure this file exists in the project directory
+        /*
+         * Ensure this file exists in the project directory
+         */
+        String fileName = "flights.txt";  
 
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
 
             while ((line = br.readLine()) != null) {
-                String[] data = line.split(","); // Splitting by comma
+                String[] data = line.split(","); 
 
                 if (data.length != 6) {
                     System.out.println("Skipping invalid line: " + line);
